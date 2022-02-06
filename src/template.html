@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <div id="root">asdasdasd</div>
+    <script src="../build/main.bundle.js"></script>
+    <script>
+        
+        new testLibrary.default({ name: ' sometihng' })
+        // mylib.init('asf')
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+
+  <form action="" id="form">
+    <input type="text" name="first-name" placeholder="firstname" />
+    <br>
+
+    <small id="first-name"  class="small"> </small>
+
+<br>
+    <input type="text" name="last-name" placeholder="last name " />
+    <br>
+
+
+    <small id="last-name" class="small"> </small>
+
+<br>
+    <input type="text" name="my-email" placeholder="email" />
+    <br>
+
+
+    <small id="my-email" class="small"> </small>
+
+<br>
+    <input type="text" name="phone" placeholder="phone" />
+    <br>
+
+
+    <small id="phone" class="small"> </small>
+
+    <br>
+
+    <input type="password" name="password" placeholder="password" />
+
+    <br>
+
+    <small id="password" class="small"></small>
+
+    <br>
+
+    <input name="url" type="text" placeholder="url">
+
+    <br>
+
+    <small id="url" class="small"></small>
+    <br>
+
+    <input type="submit" value="submit">
+  </form>
+
+
+  <script  src="../build/main.bundle.js"></script>
+  <!-- <script async src="//jsfiddle.net/jahid321/rz5xj781/4/embed/"></script> -->
+  <!-- <script  src="../dist/main.bundle.js"></script> -->
+  <script>
+
+  new testLibrary.default(document.getElementById('form'), {
+      'first-name': { minLength: 2, nonNumeric: true },
+      'last-name': { minLength: 3, nonNumeric: true },
+      'my-email': { minLength: 5 },
+      'phone': { minLength: 11, maxLength: 12 },
+      'password': { hasUpperCase: true, hasLowerCase: true },
+      'url': { hasHttps: true }
+    })
+
+  </script>
+
+</body>
+
+</html>
+
+
