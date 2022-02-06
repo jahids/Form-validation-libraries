@@ -5,8 +5,9 @@
 The Validator is cross-browser and will give you the power to use future-proof input types such as:<br>
 `first-name`, `last-name`, `email`, `phone` `url` and `https`.
 
-# [Demo](https://jahids.github.io/Form-validation-livery/src/template.html)
+# [Demo Live site](https://jahids.github.io/Form-validation-livery/src/template.html)
 
+# how to use form validation
 
     // usage this Cdn:  <script src="https://cdn.jsdelivr.net/gh/jahids/Form-validation-livery/build/main.bundle.js"></script>
 
